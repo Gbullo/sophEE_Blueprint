@@ -1,2 +1,2 @@
-# esp8266-robot
-Code for the ESP8266 mobile robot project
+# sophEE_Blueprint
+Fork of the esp8266-robot repository to test as potential sophEE project
