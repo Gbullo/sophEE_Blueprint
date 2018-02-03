@@ -8,29 +8,29 @@ $( document ).ready(function() {
     $('#forward').mousedown(function() {
       device.callFunction("forward");
     });
-    $('#forward').mouseup(function() {
-      device.callFunction("stop");
-    });
+//    $('#forward').mouseup(function() {
+//      device.callFunction("stop");
+//    });
 
     $('#right').mousedown(function() {
       device.callFunction("right");
     });
-    $('#right').mouseup(function() {
-      device.callFunction("stop");
-    });
+//    $('#right').mouseup(function() {
+//      device.callFunction("stop");
+//    });
 
     $('#left').mousedown(function() {
       device.callFunction("left");
     });
-    $('#left').mouseup(function() {
-      device.callFunction("stop");
-    });
+//    $('#left').mouseup(function() {
+//      device.callFunction("stop");
+//    });
 
     $('#backward').mousedown(function() {
       device.callFunction("backward");
     });
-    $('#backward').mouseup(function() {
-      device.callFunction("stop");
-    });
+//    $('#backward').mouseup(function() {
+//      device.callFunction("stop");
+//    });
 
 });

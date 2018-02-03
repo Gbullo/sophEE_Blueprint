@@ -121,21 +121,21 @@ int forward(String command) {
 int left(String command) {
    Serial.println("Left");
    // Enter code to turn robot left here
-  
+  /* TODO */
 }
 
 int right(String command) {
    Serial.println("Right");
    // Enter code to turn robot right here
-  
+  /* TODO */
 }
 
 int backward(String command) {
    Serial.println("Back");
    // Enter code to make robot reverse here
-     digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-
+   analogWrite(in1, 0);
+   analogWrite(in2, 0);
+   analogWrite(in3, 0);
+   analogWrite(in4, 0);
+/* TODO: ADD STOP BUTTON */
 }
