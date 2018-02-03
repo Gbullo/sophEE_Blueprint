@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
     // Device
-    var address = "192.168.0.103";
+    var address = "192.168.2.12";
     var device = new Device(address);
 
     // Buttons
