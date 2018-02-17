@@ -3,6 +3,8 @@ Fork of the esp8266-robot repository to test as potential sophEE project
 
 Code will interface with dual h-bridge drivers instead of using adafruit libraries and shield.
 
+Eagle .lbr files must be downloaded by saving the RAW file.
+
 # TODO:
 * Add stop button
 * Finish button functionalities
@@ -11,4 +13,4 @@ Code will interface with dual h-bridge drivers instead of using adafruit librari
 
 # Useful links:
 http://esp8266.github.io/Arduino/versions/2.0.0/doc/reference.html
-https://openhomeautomation.net/build-wifi-controlled-robot-esp8266
+https://openhomeautomation.net/build-wifi-controlled-robot-esp8266h
