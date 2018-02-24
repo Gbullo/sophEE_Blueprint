@@ -39,7 +39,7 @@ const int in4 = 13;
 WiFiServer server(LISTEN_PORT);
 
 // Function
-int stop(String message);
+int cancel(String message);
 int forward(String message);
 int right(String message);
 int left(String message);
@@ -57,7 +57,7 @@ void setup(void)
   pinMode(in4, OUTPUT);
 
   // Functions          
-  rest.function("stop", stop);
+  rest.function("cancel", cancel);
   rest.function("forward", forward);
   rest.function("left", left);
   rest.function("right", right);
@@ -99,16 +99,6 @@ void loop() {
  
 }
 
-int stop(String command) {
-
-  Serial.println("Stop");
-  // Enter code to stop robot here
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-}
-
 int forward(String command) {
    Serial.println("Forward");
   // Enter code to move robot forward here
@@ -121,21 +111,35 @@ int forward(String command) {
 int left(String command) {
    Serial.println("Left");
    // Enter code to turn robot left here
-  /* TODO */
+   analogWrite(in1, 0);
+   analogWrite(in2, 350);
+   analogWrite(in3, 0);
+   analogWrite(in4, 500);
 }
 
 int right(String command) {
    Serial.println("Right");
    // Enter code to turn robot right here
-  /* TODO */
+   analogWrite(in1, 0);
+   analogWrite(in2, 500);
+   analogWrite(in3, 0);
+   analogWrite(in4, 350);
 }
 
 int backward(String command) {
    Serial.println("Back");
    // Enter code to make robot reverse here
+   analogWrite(in1, 500);
+   analogWrite(in2, 0);
+   analogWrite(in3, 500);
+   analogWrite(in4, 0);
+/* TODO: ADD STOP BUTTON */
+}
+
+int cancel(String command) {
+   Serial.println("Cancel");
    analogWrite(in1, 0);
    analogWrite(in2, 0);
    analogWrite(in3, 0);
    analogWrite(in4, 0);
-/* TODO: ADD STOP BUTTON */
 }
